@@ -21,7 +21,16 @@
 - **Microservices migration** — split into independent services (auth, accounts, cards) as the platform scales
 
 ## Infrastructure
+
+### Backend
 - **PostgreSQL** — migrate from SQLite for production workloads
 - **Redis** — session caching and rate limiting
 - **Docker** — containerize backend and frontend for consistent deployments
 - **CI/CD pipeline** — automated testing and deployment on every push
+
+### Frontend
+- **End-to-end testing** — add Playwright or Cypress tests covering critical user flows (login, transfer, card payment)
+- **Code splitting** — lazy-load page-level components with `React.lazy` to reduce initial bundle size
+- **PWA support** — service worker + manifest to allow installation on mobile devices
+- **Internationalization (i18n)** — support multiple languages and locale-aware currency/date formatting
+- **Storybook** — document and develop UI components in isolation
